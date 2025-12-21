@@ -1,0 +1,35 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkblue;
+    color:darkgray
+}
+
+
+
+#tarjetas {
+    justify-content: center;
+    display: flex;
+}
+
+.tarjeta{
+    background-color:aliceblue;
+    justify-content: center;
+    text-align: center;
+    width: 450px;
+    border: 1px solid rgb(0, 88, 88);
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+#nick, #pascal{
+    margin: 40px 0px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 500px;
+}
