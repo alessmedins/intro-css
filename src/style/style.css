@@ -39,7 +39,10 @@ p {
 
 #tarjetas {
     justify-content: center;
-    display: flex;
+    display: flex;  
+}
+
+#tarjetas p {
     color: darkblue;
 }
 
@@ -65,10 +68,18 @@ p {
 #campeonato {
     border-collapse: collapse;
     background-color: aliceblue;
-    margin-left: 44%;
+    margin-left: 39%;
 }
 
 #campeonato th, #campeonato td {
     border: 5px solid black;
-    padding: 5px;
+    padding: 5px 20px;
+}
+
+#campeonato th {
+    color: darkblue;
+}
+
+#campeonato td {
+    color: black;
 }
