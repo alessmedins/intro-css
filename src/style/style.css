@@ -1,9 +1,9 @@
 * {
-    font-family:"Archivo Black", sans-serif;
     box-sizing: border-box;
 }
 
 body {
+    font-family:"Archivo Black", sans-serif;
     background-color: darkblue;
     color:rgb(0, 234, 255);
     font-size: larger;
@@ -29,11 +29,7 @@ h2 {
     color: rgb(204, 204, 204);
 }
 
-h3 {
-    color: rgb(162, 162, 162);
-}
-
-p {
+h3, p {
     color: rgb(162, 162, 162);
 }
 
