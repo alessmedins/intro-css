@@ -116,7 +116,9 @@ div, section {
 }
 
 #autos img {
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 #noticias img{
