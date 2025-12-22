@@ -27,13 +27,18 @@ header {
     align-items: center;
 }
 
+header img{
+    width: 55rem;
+    /*height: 300px;*/
+}
+
 h2 {
     margin: 40px 5%;
-    color: rgb(204, 204, 204);
+    color: rgb(0, 76, 255);
 }
 
 h3 {
-    color: rgb(0, 140, 255);
+    color: rgb(0, 166, 255);
 }
 
 p {
@@ -45,8 +50,10 @@ div, section {
 }
 
 #tarjetas {
-    display: flex;  
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-content: center;
 }
 
 #tarjetas p {
@@ -103,9 +110,26 @@ div, section {
 
 #autos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-around;
+}
+
+#autos img {
+    padding-bottom: 10px;
 }
 
 #noticias img{
     height: 200px;
+}
+
+#siguenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#siguenos ul {
+    list-style: none;
+    padding: 0;
 }
