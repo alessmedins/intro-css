@@ -3,21 +3,31 @@
 }
 
 body {
-    font-family:"Archivo Black", sans-serif;
+    font-family: "Rajdhani", "Archivo Black", sans-serif;
+    font-weight: 700;
     background-color: rgb(0, 6, 50);
     color:rgb(0, 140, 255);
-    font-size: larger;
+    font-size: 140%;
     text-align:center; 
 }
 
 nav {
     background-color: rgb(0, 2, 19);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
 }
 
 nav a {
     text-decoration: none;
     color: aliceblue;
-    margin: 0px 10px;
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    background-color: #00015b;
+    transition: 0.3s;
 }
 
 header {
@@ -67,7 +77,6 @@ div, section {
     justify-content: inherit;
     text-align: center;
     width: 360px;
-    border: 1px solid rgb(0, 88, 88);
     border-radius: 10px;
     margin: 0px 10px;
 }
@@ -136,4 +145,28 @@ div, section {
 #siguenos ul {
     list-style: none;
     padding: 0;
+}
+
+#cookies {
+    background-color: #00015b;
+    border-radius: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cookies button {
+    background-color:rgb(214, 214, 214);
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+}
+
+#cookies button:hover {
+    background-color:rgb(125, 125, 125);
 }
