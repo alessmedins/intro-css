@@ -15,17 +15,55 @@ nav {
     background-color: rgb(0, 2, 19);
     overflow: hidden;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
     padding: 0.5em;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
 }
 
-nav a {
+nav img {
+    height: 50px;
+}
+
+.elemento-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: aliceblue;
     padding: 0.5em 1em;
 }
 
-nav a:hover {
+.elemento-nav:hover {
+    background-color: #00015b;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#hablemos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 76, 255);
+    border-radius: 38%;
+    position: fixed;
+    right: 0.5%;
+    /*bottom: 2%;*/
+    bottom: 19%;
+    z-index: 1000;
+}
+
+#hablemos img {
+    width: 38px;
+    padding-bottom: 1.5px;
+}
+
+#hablemos:hover {
     background-color: #00015b;
     transition: 0.3s;
 }
@@ -70,6 +108,7 @@ div, section {
 
 #tarjetas p {
     color: darkblue;
+    
 }
 
 .tarjeta{
@@ -79,6 +118,7 @@ div, section {
     width: 360px;
     border-radius: 10px;
     margin: 0px 10px;
+    box-shadow: 0 4px 8px rgba(0, 76, 255, 0.5);
 }
 
 .tarjeta img {
@@ -112,7 +152,6 @@ div, section {
 
 #campeonato th {
     color: darkblue;
-    
 }
 
 #campeonato td {
@@ -158,6 +197,7 @@ div, section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1000;
 }
 
 #cookies button {
@@ -169,4 +209,5 @@ div, section {
 
 #cookies button:hover {
     background-color:rgb(125, 125, 125);
+    cursor: pointer;
 }
