@@ -84,13 +84,21 @@ header img{
     /*height: 300px;*/
 }
 
+h1 {
+    color: rgb(214, 214, 214);
+    font-size: 250%;
+    margin-bottom: 60px;
+}
+
 h2 {
     margin: 40px 5%;
+    margin-top: 150px;
     color: rgb(0, 76, 255);
+    font-size: 200%;
 }
 
 h3 {
-    color: rgb(0, 166, 255);
+    color: rgb(0, 204, 255);
 }
 
 p {
@@ -177,6 +185,78 @@ div, section {
     height: 200px;
 }
 
+.otra-noticia {
+    border-top: 2px solid rgb(0, 76, 255);
+    border-bottom: 2px solid rgb(0, 76, 255);
+    padding: 25px 0;
+}
+
+#otras-noticias div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#otras-noticias img {
+    width: 44rem;
+    height: 28rem;
+}
+
+#info-noticia p {
+    font-size: 85%;
+}
+
+#otras-noticias #info-noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0;
+    width: 40%;
+}
+
+#info-noticia h3 {
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+.titulo-noticia {
+    text-decoration: none;
+    font-size: 300%;
+    margin: 0 0;
+    padding: 0 0;
+    color: aliceblue;
+    line-height: 0.8;
+    margin-top: -30px;
+    margin-bottom: 5px;
+}
+
+.titulo-noticia:hover {
+    color: rgb(151, 151, 151);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.boton-ver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: aliceblue;
+    color: rgb(0, 6, 50);
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.boton-ver:hover {
+    background-color: rgb(151, 151, 151);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 #siguenos {
     display: flex;
     flex-direction: column;
@@ -236,6 +316,8 @@ footer a {
 
 footer a:hover {
     color: rgb(0, 76, 255);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .footer-cols {
