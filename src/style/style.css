@@ -426,10 +426,16 @@ footer small {
 }
 
 @media (max-width: 760px) {
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
     body{
-        font-size: 23px;
+        font-size: 16px;
         margin-inline: auto;
-        width: 90%;
     }
 
     body img {
@@ -437,11 +443,32 @@ footer small {
         height: auto;
     }
 
+    header {
+        width: 100%;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+
+    header img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 180%;
+    }
+
     #autos img {
         width: 100%;
         height: auto;
         max-width: 450px;
         margin-top: 18px;
+    }
+
+    #otras-noticias div {
+        flex-direction: column; 
+        align-items: center;
     }
 
     #otras-noticias img {
@@ -457,7 +484,11 @@ footer small {
     }
 
     #otras-noticias #info-noticia {
-        width: 75%;
+        width: 85%;
+    }
+
+    .titulo-noticia {
+        font-size: 200%;
     }
 
     .nav__menu {
@@ -469,20 +500,25 @@ footer small {
         place-items: center;
     }
 
-    footer {
-        font-size: 110%;
+    .tarjeta {
+        width: 80%;
+        max-width: 350px;
+        margin: 10px 0;
+    }
+
+    #tarjetas {
+        justify-content: center;
+        padding: 0;
+    }
+
+    #campeonato th, #campeonato td {
+        padding: 5px 5px;
+        font-size: 0.9em;
+    }
+
+    #carreras img {
+        width: 90%;
+        max-width: 350px;
     }
 
 }
-
-/*
-@media (min-width: 600px) and (max-width: 1024px){
-    body{
-        font-size: 18px;
-    }
-
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}*/
