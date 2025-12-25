@@ -13,14 +13,36 @@
 </head>
 <body>
     <nav>
-        <a href="#inicio">
-            <img src="src/images/logo3.png" alt="Logo formula E">
-        </a>
-        <a href="#inicio" class="elemento-nav">INICIO</a>
-        <a href="#noticias" class="elemento-nav">NOTICIAS</a>
-        <a href="#carreras" class="elemento-nav">CARRERAS</a>
-        <a href="#siguenos" class="elemento-nav">SÍGUENOS</a>
-        <a href="#login" class="elemento-nav">LOGIN</a>
+        <div id="nav__actions">
+            <a href="#inicio">
+                <img src="src/images/logo3.png" alt="Logo formula E">
+            </a>
+            <div class="nav__menu">
+                
+                <a href="#inicio" class="elemento-nav">INICIO</a>
+                <a href="#noticias" class="elemento-nav">NOTICIAS</a>
+                <a href="#carreras" class="elemento-nav">CARRERAS</a>
+                <a href="#siguenos" class="elemento-nav">SÍGUENOS</a>
+                <a href="#login" class="elemento-nav" id="login">LOGIN</a>
+            </div>
+            
+            <button class="nav__toggle" id="navToggle"
+                    aria-expanded="false" aria-controls="mobilePanel"
+                    aria-label="Abrir menú">
+                <span class="sr-only">Abrir menú</span>
+                <span class="burger" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="nav__panel" id="mobilePanel" hidden>
+            <ul class="nav__panelList">
+                <li><a href="#inicio" class="panel-nav">INICIO</a></li>
+                <li><a href="#noticias" class="panel-nav">NOTICIAS</a></li>
+                <li><a href="#carreras" class="panel-nav">CARRERAS</a></li>
+                <li><a href="#siguenos" class="panel-nav">SÍGUENOS</a></li>
+                <li><a href="#login" class="panel-nav">LOGIN</a></li>
+            </ul>
+        </div>
     </nav>
     <header id="inicio">
         <img src="src/images/logo2.png" alt="Logo">
@@ -128,7 +150,7 @@
             
             <div id="info-noticia">
                 <h3>DESCUBRE</h3><br>
-                <a href="https://fiaformulae.com/en/stats-centre" class="titulo-noticia" target="_blank">CENTRO DE DATOS</a>
+                <a href="https://fiaformulae.com/en/stats-centre" class="titulo-noticia" target="_blank">CENTRO DE ESTADÍSTICAS</a>
                 <p>Descubre las estadísticas clave de la Fórmula E. Consulta qué pilotos ganaron, dónde y con qué frecuencia, o profundiza en su rendimiento esta temporada.
                 <br><br>Con la tecnología de Infosys, el nuevo Centro de Estadísticas utiliza IA para ofrecerte toda la información necesaria para seguir la competición.</p>
                 <a href="https://fiaformulae.com/en/stats-centre" class="boton-ver" target="_blank">MIRA AHORA</a>
@@ -177,11 +199,12 @@
                 </ul>
             </div>
         </section>
-        <br><br><br><br><br>
+        <br><br><br>
     </footer>
     <div id="cookies">
         <p>Este sitio utiliza cookies para mejorar la experiencia. <a href="#politicas">Más información</a></p>
         <button>ACEPTAR</button>
     </div>
 </body>
+<script src="src/js/main.js"></script>
 </html>
