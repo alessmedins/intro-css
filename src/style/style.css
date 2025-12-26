@@ -511,6 +511,18 @@ footer small {
         width: 90%;
     }
 
+    #oliver {
+        order: 1;
+    }
+
+    #nick {
+        order: 2;
+    }
+
+    #pascal {
+        order: 3;
+    }
+
     #autos img {
         width: 100%;
         height: auto;
