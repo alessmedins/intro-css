@@ -196,6 +196,36 @@ div, section {
     color: rgb(162, 162, 162);
 }
 
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 8px;
+    width: 90%;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #00015b;
+    padding: 5px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
 #tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -233,6 +263,11 @@ div, section {
     justify-content: center;
     align-items: center;
     padding-top: 40px;
+}
+
+.noticia-destacada {
+    border-top: 2px solid rgb(0, 76, 255);
+    padding: 50px 0;;
 }
 
 #campeonato {
@@ -355,6 +390,11 @@ div, section {
     padding: 0;
 }
 
+#siguenos ul li a{
+    text-decoration: none;
+    color: rgb(0, 166, 255);
+}
+
 #cookies {
     background-color: #00015b;
     border-radius: 15px;
@@ -384,6 +424,10 @@ div, section {
     background-color:rgb(125, 125, 125);
     transition: 0.3s;
     cursor: pointer;
+}
+
+#cookies a {
+    color: rgb(0, 166, 255);
 }
 
 footer {
@@ -458,6 +502,13 @@ footer small {
 
     h1 {
         font-size: 180%;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 130px;
+        gap: 7px;
+        width: 90%;
     }
 
     #autos img {
